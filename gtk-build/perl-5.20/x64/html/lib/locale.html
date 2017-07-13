@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;</span></strong></big>
+</td></tr>
+</table>
+
+
+
+<ul id="index">
+  <li><a href="#NAME">NAME</a></li>
+  <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
+  <li><a href="#DESCRIPTION">DESCRIPTION</a></li>
+</ul>
+
+<h1 id="NAME">NAME</h1>
+
+<p>locale - Perl pragma to use or avoid POSIX locales for built-in operations</p>
+
+<h1 id="SYNOPSIS">SYNOPSIS</h1>
+
+<pre><code>    @x = sort @y;      # Native-platform/Unicode code point sort order
+    {
+        use locale;
+        @x = sort @y;  # Locale-defined sort order
+    }
+    @x = sort @y;      # Native-platform/Unicode code point sort order
+                       # again</code></pre>
+
+<h1 id="DESCRIPTION">DESCRIPTION</h1>
+
+<p>This pragma tells the compiler to enable (or disable) the use of POSIX locales for built-in operations (for example, LC_CTYPE for regular expressions, LC_COLLATE for string comparison, and LC_NUMERIC for number formatting). Each &quot;use locale&quot; or &quot;no locale&quot; affects statements to the end of the enclosing BLOCK.</p>
+
+<p>See <a href="file:/c|/mozilla-build/perl-5.20/x64/html/pod/perllocale.html">perllocale</a> for more detailed information on how Perl supports locales.</p>
+
+<p>On systems that don&#39;t have locales, this pragma will cause your operations to behave as if in the &quot;C&quot; locale; attempts to change the locale will fail.</p>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>
+
+

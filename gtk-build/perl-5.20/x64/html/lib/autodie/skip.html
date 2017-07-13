@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
+
+<body>
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;</span></strong></big>
+</td></tr>
+</table>
+
+
+
+<ul id="index">
+  <li><a href="#NAME">NAME</a></li>
+  <li><a href="#SYNPOSIS">SYNPOSIS</a></li>
+  <li><a href="#DESCRIPTION">DESCRIPTION</a></li>
+  <li><a href="#AUTHOR">AUTHOR</a></li>
+  <li><a href="#LICENSE">LICENSE</a></li>
+  <li><a href="#SEE-ALSO">SEE ALSO</a></li>
+</ul>
+
+<h1 id="NAME">NAME</h1>
+
+<p>autodie::skip - Skip a package when throwing autodie exceptions</p>
+
+<h1 id="SYNPOSIS">SYNPOSIS</h1>
+
+<pre><code>    use parent qw(autodie::skip);</code></pre>
+
+<h1 id="DESCRIPTION">DESCRIPTION</h1>
+
+<p>This dummy class exists to signal that the class inheriting it should be skipped when reporting exceptions from autodie. This is useful for utility classes like <a>Path::Tiny</a> that wish to report the location of where they were called on failure.</p>
+
+<p>If your class has a better way of doing roles, then you should not load this class and instead simply say that your class <i>DOES</i> <code>autodie::skip</code> instead.</p>
+
+<h1 id="AUTHOR">AUTHOR</h1>
+
+<p>Copyright 2013, Paul Fenwick &lt;pjf@cpan.org&gt;</p>
+
+<h1 id="LICENSE">LICENSE</h1>
+
+<p>This module is free software. You may distribute it under the same terms as Perl itself.</p>
+
+<h1 id="SEE-ALSO">SEE ALSO</h1>
+
+<p><a href="file:/c|/mozilla-build/perl-5.20/x64/html/lib/autodie.html">autodie</a>, <a href="file:/c|/mozilla-build/perl-5.20/x64/html/lib/autodie/exception.html">autodie::exception</a></p>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>
+
+
