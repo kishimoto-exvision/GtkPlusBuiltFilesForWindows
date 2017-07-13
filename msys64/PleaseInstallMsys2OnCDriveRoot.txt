@@ -1,0 +1,4 @@
+Please install 64-bit version MSYS2 on "C:\msys64".
+Refer to http://www.msys2.org/
+The file name is "msys2-x86_64-20161025.exe".
+http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20161025.exe
