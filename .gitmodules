@@ -1,0 +1,3 @@
+[submodule "gtk-build/github/gtk-win32"]
+	path = gtk-build/github/gtk-win32
+	url = https://github.com/hexchat/gtk-win32.git
